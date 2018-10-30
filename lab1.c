@@ -41,21 +41,27 @@ void display(void) {
     glDisable(GL_LINE_STIPPLE);
 
     glPushMatrix();
-    glTranslatef(-1.0f, -1.5f, 0.0f);
+    glTranslatef(-1.0f, -0.75f, 0.0f);
+    glScalef(0.5f, 0.5f, 1.0f);
     glRotatef(-60.0f, 1.0f, 0.0f, 0.0f);
     glutWireOctahedron();
     glPopMatrix();
 
     glPushMatrix();
-    glTranslatef(-1.0f, 0.25f, 0.0f);
+    glTranslatef(-1.0f, 0.5f, 0.0f);
     glRotatef(45.0f, 0.0f, 1.0f, 0.0f);
     glutWireCone(0.5, 2.0, 20, 20);
     glPopMatrix();
 
     glPushMatrix();
-    glTranslatef(-1.0f, 2.0f, 0.0f);
+    glTranslatef(-1.0f, 2.1f, 0.0f);
     glRotatef(15.0f, 0.0f, 0.0f, -1.0f);
     glutWireTeapot(1.0);
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-1.0f, -2.0f, 0.0f);
+    glutWireTorus(0.1, 0.6, 20, 40);
     glPopMatrix();
 
     glFlush();
