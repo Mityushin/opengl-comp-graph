@@ -16,6 +16,6 @@ add_executable(${PROJECT_NAME} #[[${SRC_LIST}]] lab1.c)
 target_link_libraries(
         ${PROJECT_NAME}
         m
-        ${OPENGL_gl_LIBRARY}
+        ${OPENGL_LIBRARY}
         ${OPENGL_glu_LIBRARY}
         ${GLUT_LIBRARIES} )
