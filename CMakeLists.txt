@@ -19,3 +19,5 @@ target_link_libraries(
         ${OPENGL_LIBRARY}
         ${OPENGL_glu_LIBRARY}
         ${GLUT_LIBRARIES} )
+
+configure_file(bicycle.bmp bicycle.bmp COPYONLY)
